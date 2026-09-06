@@ -1,9 +1,18 @@
 <script setup lang="ts">
 import CoffeeCard from '@/components/CoffeeCard.vue';
+import ImageCarousel from '@/components/ImageCarousel.vue';
+import kirkuzaImg from '@/assets/images/carousel/kirkuza.jpg'
+
+const heroImages = [
+    { src: kirkuzaImg, alt: 'Latte group' },
+    { src: kirkuzaImg, alt: 'Latte group' },
+    { src: kirkuzaImg, alt: 'Latte group' }
+]
 </script>
 
 <template>
     <main class="mainPage">
+        <ImageCarousel :images="heroImages"></ImageCarousel>
         <!-- <CoffeeCard></CoffeeCard> -->
     </main>
 </template>
