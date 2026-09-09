@@ -31,7 +31,7 @@ defineProps<{ item: CoffeeItem }>()
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: #FAF6F0;
+  background: white;
   border: 1px solid rgba(59, 36, 23, 0.12);
   border-radius: 14px;
   overflow: hidden;
@@ -40,7 +40,7 @@ defineProps<{ item: CoffeeItem }>()
 .coffeeImageWrap {
   width: 100%;
   aspect-ratio: 4 / 5; 
-  background: #EDE3D6;
+  background: white;
   overflow: hidden;
 }
 
@@ -65,18 +65,16 @@ defineProps<{ item: CoffeeItem }>()
 
 .coffeeName {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', serif;
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 1.25;
-  color: #2B1B10;
+  color: black;
 }
 
 .coffeePrice {
   margin: 0;
-  font-family: system-ui, sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
-  color: #8A5A3B;
+  color: black;
 }
 </style>

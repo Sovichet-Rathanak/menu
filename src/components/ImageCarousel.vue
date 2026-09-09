@@ -25,7 +25,7 @@ onMounted(() => {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   if (prefersReducedMotion) return 
 
-  timer = setInterval(advance, props.intervalMs ?? 2000)
+  timer = setInterval(advance, props.intervalMs ?? 3000)
 })
 
 onUnmounted(() => {
@@ -59,8 +59,11 @@ onUnmounted(() => {
 .carousel {
   position: relative;
   width: 100%;
-  border-radius: 12px;
-  overflow: hidden; 
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .carouselTrack {

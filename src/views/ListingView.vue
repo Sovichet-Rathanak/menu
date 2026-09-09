@@ -1,19 +1,30 @@
 <script setup lang="ts">
 import CoffeeCard from '@/components/CoffeeCard.vue';
 import ImageCarousel from '@/components/ImageCarousel.vue';
-import kirkuzaImg from '@/assets/images/carousel/kirkuza.jpg'
+import image1 from '@/assets/images/carousel/1.png'
+import image2 from '@/assets/images/carousel/2.png'
+import image3 from '@/assets/images/carousel/3.png'
 
 const heroImages = [
-    { src: kirkuzaImg, alt: 'Latte group' },
-    { src: kirkuzaImg, alt: 'Latte group' },
-    { src: kirkuzaImg, alt: 'Latte group' }
+    { src: image1, alt: 'welcome' },
+    { src: image2, alt: 'latte_group' },
+    { src: image3, alt: 'latte' }
 ]
+
+const coffeeItems = {
+  name: "កាហ្វេឡាតេទឹកកក",
+  price: 2,
+  imageUrl: '../assets/images/carousel/1.png',
+  imageAlt: 'cafe'
+}
 </script>
 
 <template>
     <main class="mainPage">
         <ImageCarousel :images="heroImages"></ImageCarousel>
-        <!-- <CoffeeCard></CoffeeCard> -->
+        <h3 style="margin-top: 0;">Browse The Menu</h3>
+        <CoffeeCard :item="coffeeItems"></CoffeeCard>
+        <CoffeeCard :item="coffeeItems"></CoffeeCard>
     </main>
 </template>
 
@@ -27,6 +38,10 @@ const heroImages = [
   gap: 1.5rem;
   background-color: white;
   padding: 1.25rem;
+  background: white;
+  background-image: radial-gradient(black 1px, transparent 0);
+  background-size: 51px 51px;
+  background-position: -19px -19px;
 }
 
 .pageHeader h1 {
