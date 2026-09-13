@@ -1,10 +1,8 @@
 <script setup lang="ts">
-interface CoffeeItem {
-  name: string
-  price: number
-  imageUrl: string
-  imageAlt?: string
-}
+import { useI18n } from 'vue-i18n'
+import type { CoffeeItem } from '@/util/MenuItems';
+
+const { locale } = useI18n()
 
 defineProps<{ item: CoffeeItem }>()
 </script>
@@ -14,14 +12,17 @@ defineProps<{ item: CoffeeItem }>()
     <div class="coffeeImageWrap">
       <img
         :src="item.imageUrl"
-        :alt="item.imageAlt || item.name"
+        :alt="item.imageAlt || item.name.km"
         class="coffeeImage"
         loading="lazy"
       />
     </div>
+
     <div class="coffeeInfo">
-      <h3 class="coffeeName">{{ item.name }}</h3>
-      <p class="coffeePrice">${{ item.price.toFixed(2) }}</p>
+      <h3 class="coffeeName">
+        {{ locale === 'km' ? item.name.km : item.name.zh }}
+      </h3>
+      <p class="coffeePrice">{{ item.price }}៛</p>
     </div>
   </article>
 </template>
@@ -60,16 +61,16 @@ defineProps<{ item: CoffeeItem }>()
 }
 
 .coffeeInfo {
-  padding: 0.9rem 1rem 1.1rem;
+  padding: .7rem;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
 }
 
 .coffeeName {
-  margin: 0;
-  font-weight: 600;
-  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 1.25;
   color: black;
   font-family: 'Noto Sans Khmer', serif;
@@ -77,8 +78,9 @@ defineProps<{ item: CoffeeItem }>()
 
 .coffeePrice {
   margin: 0;
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-family: 'Noto Sans Khmer', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
   color: black;
 }
 </style>

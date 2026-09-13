@@ -4,8 +4,7 @@ import ImageCarousel from '@/components/ImageCarousel.vue';
 import image1 from '@/assets/images/carousel/1.png'
 import image2 from '@/assets/images/carousel/2.png'
 import image3 from '@/assets/images/carousel/3.png'
-import image4 from '@/assets/images/menu/Black White and Orange Illustrated Good Morning Facebook Post(24).png'
-
+import { menuItems, type CoffeeItem } from '@/util/MenuItems'
 
 const heroImages = [
     { src: image1, alt: 'welcome' },
@@ -13,28 +12,63 @@ const heroImages = [
     { src: image3, alt: 'latte' }
 ]
 
-const coffeeItems = [
-  {
-    name: "កាហ្វេឡាតេទឹកកក",
-    price: 2,
-    imageUrl: image4,
-    imageAlt: 'cafe'
-  },
-] 
+const getItemsByCategory = (category: CoffeeItem['category']) => {
+  return menuItems.filter(item => item.category === category)
+}
 </script>
 
 <template>
-    <main class="mainPage">
-        <ImageCarousel :images="heroImages"></ImageCarousel>
-        <h2 style="margin: 0; font-family: 'Noto Sans Khmer', sans-serif;">ម៉ឺនុយរបស់យើង</h2>
-        <section class="coffeeGrid">
-          <CoffeeCard
-            v-for="item in coffeeItems"
-            :key="item.name"
-            :item="item"
-          />
-        </section>
-    </main>
+  <main class="mainPage">
+    <ImageCarousel :images="heroImages" />
+
+    <h2 class="menuTitle">
+      {{ $t('menu.categories.coffee') }}
+    </h2>
+
+    <section class="coffeeGrid">
+      <CoffeeCard
+        v-for="item in getItemsByCategory('coffee')"
+        :key="item.name.km"
+        :item="item"
+      />
+    </section>
+
+    <h2 class="menuTitle">
+      {{ $t('menu.categories.tea') }}
+    </h2>
+
+    <section class="coffeeGrid">
+      <CoffeeCard
+        v-for="item in getItemsByCategory('tea')"
+        :key="item.name.km"
+        :item="item"
+      />
+    </section>
+
+    <h2 class="menuTitle">
+      {{ $t('menu.categories.milkTea') }}
+    </h2>
+
+    <section class="coffeeGrid">
+      <CoffeeCard
+        v-for="item in getItemsByCategory('milkTea')"
+        :key="item.name.km"
+        :item="item"
+      />
+    </section>
+
+    <h2 class="menuTitle">
+      {{ $t('menu.categories.freshMilk') }}
+    </h2>
+
+    <section class="coffeeGrid">
+      <CoffeeCard
+        v-for="item in getItemsByCategory('freshMilk')"
+        :key="item.name.km"
+        :item="item"
+      />
+    </section>
+  </main>
 </template>
 
 <style scoped>
@@ -54,7 +88,11 @@ const coffeeItems = [
 }
 
 .menuTitle {
+  appearance: none;
+  -webkit-appearance: none;
   margin: 0;
+  font-family: 'Noto Sans Khmer', sans-serif;
+
 }
 
 .pageHeader h1 {
@@ -84,12 +122,6 @@ const coffeeItems = [
 @media (min-width: 1024px) {
   .coffeeGrid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 768px) {
-  .mainPage {
-    padding: 2rem;
   }
 }
 </style>
