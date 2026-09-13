@@ -1,9 +1,19 @@
-<!-- SiteHeader.vue -->
 <script setup lang="ts"></script>
 
 <template>
   <header class="siteHeader">
-    <h1 class="siteTitle">Lucky Tea &amp; Coffee</h1>
+    <h1 class="siteTitle">
+      Lucky Tea
+      <span class="coffeeLine">
+        &amp; Coffee
+        <Iconify
+          class="coffeeIcon"
+          icon="boxicons:coffee-beans-filled"
+          height="2rem"
+          width="2rem"
+        />
+      </span>
+    </h1>
   </header>
 </template>
 
@@ -24,12 +34,23 @@
 }
 
 .siteTitle {
+  font-family: 'Climate Crisis', sans-serif;
   margin: 0;
   font-weight: 700;
   font-size: clamp(1.05rem, 5vw, 1.35rem);
   letter-spacing: -0.01em;
   color: black;
   white-space: nowrap;
+}
+
+.coffeeLine {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.coffeeIcon {
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {

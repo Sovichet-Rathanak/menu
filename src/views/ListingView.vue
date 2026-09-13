@@ -4,6 +4,8 @@ import ImageCarousel from '@/components/ImageCarousel.vue';
 import image1 from '@/assets/images/carousel/1.png'
 import image2 from '@/assets/images/carousel/2.png'
 import image3 from '@/assets/images/carousel/3.png'
+import image4 from '@/assets/images/menu/Black White and Orange Illustrated Good Morning Facebook Post(24).png'
+
 
 const heroImages = [
     { src: image1, alt: 'welcome' },
@@ -11,20 +13,27 @@ const heroImages = [
     { src: image3, alt: 'latte' }
 ]
 
-const coffeeItems = {
-  name: "កាហ្វេឡាតេទឹកកក",
-  price: 2,
-  imageUrl: '../assets/images/carousel/1.png',
-  imageAlt: 'cafe'
-}
+const coffeeItems = [
+  {
+    name: "កាហ្វេឡាតេទឹកកក",
+    price: 2,
+    imageUrl: image4,
+    imageAlt: 'cafe'
+  },
+] 
 </script>
 
 <template>
     <main class="mainPage">
         <ImageCarousel :images="heroImages"></ImageCarousel>
-        <h3 style="margin-top: 0;">Browse The Menu</h3>
-        <CoffeeCard :item="coffeeItems"></CoffeeCard>
-        <CoffeeCard :item="coffeeItems"></CoffeeCard>
+        <h2 style="margin: 0; font-family: 'Noto Sans Khmer', sans-serif;">ម៉ឺនុយរបស់យើង</h2>
+        <section class="coffeeGrid">
+          <CoffeeCard
+            v-for="item in coffeeItems"
+            :key="item.name"
+            :item="item"
+          />
+        </section>
     </main>
 </template>
 
@@ -44,44 +53,38 @@ const coffeeItems = {
   background-position: -19px -19px;
 }
 
+.menuTitle {
+  margin: 0;
+}
+
 .pageHeader h1 {
   margin: 0;
   font-size: 1.5rem;
   color: #2b2b3a;
 }
 
-.productGrid {
+.coffeeGrid {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
 }
 
-.productCard {
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 12px;
-  padding: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  backdrop-filter: blur(4px);
+@media (min-width: 768px) {
+  .mainPage {
+    padding: 2rem;
+  }
+
+  .coffeeGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
 }
 
-.productImage {
-  aspect-ratio: 1 / 1;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.productName {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #2b2b3a;
-}
-
-.productPrice {
-  margin: 0;
-  font-weight: 600;
-  color: #2b2b3a;
+@media (min-width: 1024px) {
+  .coffeeGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) {

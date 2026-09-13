@@ -39,19 +39,22 @@ defineProps<{ item: CoffeeItem }>()
 
 .coffeeImageWrap {
   width: 100%;
-  aspect-ratio: 4 / 5; 
+  aspect-ratio: 4 / 5;
   background: white;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .coffeeImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
   display: block;
   transition: transform 0.4s ease;
 }
-
 .coffeeCard:hover .coffeeImage {
   transform: scale(1.04);
 }
@@ -65,10 +68,11 @@ defineProps<{ item: CoffeeItem }>()
 
 .coffeeName {
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.25;
   color: black;
+  font-family: 'Noto Sans Khmer', serif;
 }
 
 .coffeePrice {
