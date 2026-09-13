@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SiteFooter from './components/SiteFooter.vue';
 import SiteHeader from './components/SiteHeader.vue';
 </script>
 
@@ -7,6 +8,7 @@ import SiteHeader from './components/SiteHeader.vue';
     <div class="mainContainer">
       <site-header></site-header>
       <router-view></router-view>
+      <site-footer></site-footer>
     </div>
   </main>
 </template>
