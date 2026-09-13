@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import CoffeeCard from '@/components/CoffeeCard.vue';
 import ImageCarousel from '@/components/ImageCarousel.vue';
-import image1 from '@/assets/images/carousel/1.png'
-import image2 from '@/assets/images/carousel/2.png'
-import image3 from '@/assets/images/carousel/3.png'
+import image1 from '@/assets/carousel/1.png'
+import image2 from '@/assets/carousel/2.png'
+import image3 from '@/assets/carousel/3.png'
 import { menuItems, type CoffeeItem } from '@/util/MenuItems'
 
 const heroImages = [

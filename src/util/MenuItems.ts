@@ -16,7 +16,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '冰美式',
     },
     price: 6000,
-    imageUrl: 'src/assets/images/menu/americano.png',
+    imageUrl: '/menu/americano.png',
     category: 'coffee',
   },
   {
@@ -25,7 +25,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '冰奶油咖啡',
     },
     price: 6000,
-    imageUrl: 'src/assets/images/menu/cream_coffee.png',
+    imageUrl: '/menu/cream_coffee.png',
     category: 'coffee',
   },
   {
@@ -34,7 +34,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '冰拿铁',
     },
     price: 6000,
-    imageUrl: 'src/assets/images/menu/latte.png',
+    imageUrl: '/menu/latte.png',
     category: 'coffee',
   },
   {
@@ -43,7 +43,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '冰摩卡',
     },
     price: 6000,
-    imageUrl: 'src/assets/images/menu/default.png',
+    imageUrl: '/menu/default.png',
     category: 'coffee',
   },
   {
@@ -52,7 +52,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '冰奶咖啡',
     },
     price: 6000,
-    imageUrl: 'src/assets/images/menu/condensed_milk.png',
+    imageUrl: '/menu/condensed_milk.png',
     category: 'coffee',
   },
   {
@@ -61,7 +61,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '芋头芒果鲜奶',
     },
     price: 7000,
-    imageUrl: 'src/assets/images/menu/purple_potato.png',
+    imageUrl: '/menu/purple_potato.png',
     category: 'freshMilk',
   },
   {
@@ -70,7 +70,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '草莓鲜奶',
     },
     price: 7000,
-    imageUrl: 'src/assets/images/menu/strawberry_milk.png',
+    imageUrl: '/menu/strawberry_milk.png',
     category: 'freshMilk',
   },
   {
@@ -79,7 +79,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '百香果鲜奶',
     },
     price: 7000,
-    imageUrl: 'src/assets/images/menu/passion_milk.png',
+    imageUrl: '/menu/passion_milk.png',
     category: 'freshMilk',
   },
   {
@@ -88,7 +88,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '巧克力',
     },
     price: 7000,
-    imageUrl: 'src/assets/images/menu/chocolate.png',
+    imageUrl: '/menu/chocolate.png',
     category: 'freshMilk',
   },
   {
@@ -179,7 +179,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '抹茶拿铁',
     },
     price: 7000,
-    imageUrl: 'src/assets/images/menu/matcha_latte.png',
+    imageUrl: '/menu/matcha_latte.png',
     category: 'tea',
   },
   {
@@ -197,7 +197,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '百香果奶盖',
     },
     price: 7000,
-    imageUrl: 'src/assets/images/menu/passion_cream.png',
+    imageUrl: '/menu/passion_cream.png',
     category: 'tea',
   },
   {
@@ -233,7 +233,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '日本柚子茶',
     },
     price: 7000,
-    imageUrl: 'src/assets/images/menu/yuzu.png',
+    imageUrl: '/menu/yuzu.png',
     category: 'tea',
   },
   {
@@ -269,7 +269,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '百香果苏打',
     },
     price: 7000,
-    imageUrl: 'src/assets/images/menu/passion_soda.png',
+    imageUrl: '/menu/passion_soda.png',
     category: 'tea',
   },
 ]
