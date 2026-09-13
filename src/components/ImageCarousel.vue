@@ -74,12 +74,6 @@ onUnmounted(() => {
   pointer-events: none; 
 }
 
-.carouselSlide {
-  width: 33.3333%;
-  flex-shrink: 0;
-  aspect-ratio: 16 / 9;
-}
-
 .carouselImage {
   width: 100%;
   height: 100%;

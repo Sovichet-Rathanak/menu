@@ -40,10 +40,9 @@ defineProps<{ item: CoffeeItem }>()
 
 .coffeeImageWrap {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1/1;
   background: white;
   overflow: hidden;
-
   display: flex;
   align-items: center;
   justify-content: center;
