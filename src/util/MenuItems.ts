@@ -97,7 +97,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '红豆黑糖鲜奶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/red_bean.png',
     category: 'freshMilk',
   },
   {
@@ -106,7 +106,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '黑糖鲜奶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/brown_sugar.png',
     category: 'freshMilk',
   },
 
@@ -116,16 +116,16 @@ export const menuItems: CoffeeItem[] = [
       zh: '台湾奶茶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/taiwan_milk.png',
     category: 'milkTea',
   },
   {
     name: {
-      km: 'តែថៃប្រោនស៊ូហ្គឺ',
+      km: 'តែក្រហមប្រោនស៊ូហ្គឺ',
       zh: '泰式黑糖奶茶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/red_milktea.png',
     category: 'milkTea',
   },
   {
@@ -134,7 +134,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '黑糖伯爵奶茶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/default.png',
     category: 'milkTea',
   },
   {
@@ -143,7 +143,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '黑糖绿奶茶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/matcha_brown.png',
     category: 'milkTea',
   },
   {
@@ -152,7 +152,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '茉莉奶茶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/malis_milk.png',
     category: 'milkTea',
   },
   {
@@ -161,7 +161,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '乌龙奶茶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/oolong_milk.png',
     category: 'milkTea',
   },
   {
@@ -170,7 +170,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '黑茶芝士奶盖',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/black_tea_cheese.png',
     category: 'milkTea',
   },
   {
@@ -188,7 +188,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '黑茶奶盖',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/black_tea_cream.png',
     category: 'tea',
   },
   {
@@ -206,7 +206,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '香兰奶盖',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/default.png',
     category: 'tea',
   },
   {
@@ -215,7 +215,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '黄瓜奶盖',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/melon_cream.png',
     category: 'tea',
   },
   {
@@ -224,7 +224,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '蜂蜜青柠茶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/honey_lemon.png',
     category: 'tea',
   },
   {
@@ -242,7 +242,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '绿茶奶盖',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/default.png',
     category: 'tea',
   },
   {
@@ -251,7 +251,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '茉莉奶盖',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/malis_cream.png',
     category: 'tea',
   },
   {
@@ -260,7 +260,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '乌龙百香果茶',
     },
     price: 7000,
-    imageUrl: '',
+    imageUrl: '/menu/oolong_passion.png',
     category: 'tea',
   },
   {
