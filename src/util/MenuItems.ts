@@ -21,6 +21,15 @@ export const menuItems: CoffeeItem[] = [
   },
   {
     name: {
+      km: 'អាយកាពូជីណូ',
+      zh: '冰美式',
+    },
+    price: 6000,
+    imageUrl: '/menu/capuccino.png',
+    category: 'coffee',
+  },
+  {
+    name: {
       km: 'កាហ្វេដោះគោគ្រីមទឹកកក',
       zh: '冰奶油咖啡',
     },
@@ -43,7 +52,7 @@ export const menuItems: CoffeeItem[] = [
       zh: '冰摩卡',
     },
     price: 6000,
-    imageUrl: '/menu/default.png',
+    imageUrl: '/menu/mocha.png',
     category: 'coffee',
   },
   {
@@ -87,9 +96,9 @@ export const menuItems: CoffeeItem[] = [
       km: 'សូកូឡា',
       zh: '巧克力',
     },
-    price: 7000,
+    price: 6000,
     imageUrl: '/menu/chocolate.png',
-    category: 'freshMilk',
+    category: 'coffee',
   },
   {
     name: {
