@@ -22,7 +22,7 @@ export const menuItems: CoffeeItem[] = [
   {
     name: {
       km: 'អាយកាពូជីណូ',
-      zh: '冰美式',
+      zh: '冰卡布奇诺',
     },
     price: 6000,
     imageUrl: '/menu/capuccino.png',
@@ -263,6 +263,15 @@ export const menuItems: CoffeeItem[] = [
     imageUrl: '/menu/malis_cream.png',
     category: 'tea',
   },
+  {
+    name: {
+      km: 'តែមេអំបៅទឹកដោះគោ',
+      zh: '蝶豆花奶茶',
+    },
+    price: 7000,
+    imageUrl: '/menu/butterfly.png',
+    category: 'milkTea',
+  },  
   {
     name: {
       km: 'តែអូឡុងផាសិន',
